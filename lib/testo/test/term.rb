@@ -13,7 +13,7 @@ class Testo::Test
 
     Message = -> message { message[:to] == :term }
 
-    def check
+    def []
       new_term = clone
 
       fork do

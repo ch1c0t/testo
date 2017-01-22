@@ -7,7 +7,7 @@ module Testo
 
     def [] object
       @it = object
-      Report.new @terms.map &:check
+      Report.new @terms.map &[]
     end
 
     def ok? object

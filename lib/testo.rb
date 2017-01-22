@@ -1,4 +1,5 @@
 require 'tra/run'
+require 'to_proc/all'
 
 require 'testo/test'
 

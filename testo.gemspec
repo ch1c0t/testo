@@ -6,6 +6,7 @@ Gem::Specification.new do |g|
   g.authors = ['Anatoly Chernow']
 
   g.add_dependency 'tra'
+  g.add_dependency 'to_proc'
 
   g.add_development_dependency 'pry'
   g.add_development_dependency 'pry-byebug'
