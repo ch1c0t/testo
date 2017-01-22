@@ -34,6 +34,7 @@ describe Test do
     end
 
     it 'basic' do
+      assert { @terms.is_a? Testo::Test::Report }
       assert { @terms.size == 4 }
 
       failed_terms = @terms.reject &:ok?

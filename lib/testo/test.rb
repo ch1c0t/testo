@@ -7,7 +7,7 @@ module Testo
 
     def [] object
       @it = object
-      @terms.map &:check
+      Report.new @terms.map &:check
     end
 
     def ok? object
@@ -29,3 +29,4 @@ module Testo
 end
 
 require_relative 'test/term'
+require_relative 'test/report'
