@@ -1,8 +1,8 @@
 require_relative 'helper'
 
-describe Contract do
+describe Test do
   before do
-    @contract = Contract.new do
+    @test = Test.new do
       term 'which changes the state' do
         it.instance_eval do
           def hello *args
@@ -30,7 +30,7 @@ describe Contract do
 
   describe 'bare Object instance' do
     before do
-      @terms = @contract.check Object.new
+      @terms = @test[Object.new]
     end
 
     it 'basic' do

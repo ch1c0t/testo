@@ -1,4 +1,4 @@
-class Testo::Contract
+class Testo::Test
   class Term
     def initialize id = object_id, &block
       @id, @block = id, block

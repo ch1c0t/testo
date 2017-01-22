@@ -1,11 +1,11 @@
 module Testo
-  class Contract
+  class Test
     def initialize
       @terms = []
       instance_eval &Proc.new
     end
 
-    def check object
+    def [] object
       @it = object
       @terms.map &:check
     end
@@ -28,4 +28,4 @@ module Testo
   end
 end
 
-require_relative 'contract/term'
+require_relative 'test/term'

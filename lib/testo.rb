@@ -1,6 +1,6 @@
 require 'tra/run'
 
-require 'testo/contract'
+require 'testo/test'
 
 module Testo
   Thread.new do
@@ -9,7 +9,7 @@ module Testo
         message = Tra.next
 
         case message
-        when Contract::Term::Message
+        when Test::Term::Message
           term = ObjectSpace._id2ref message[:object_id]
           term.queue << message
         end
